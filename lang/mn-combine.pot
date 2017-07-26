@@ -1,0 +1,157 @@
+# Copyright (C) 2013 MnCombine
+# This file is distributed under the same license as the MnCombine package.
+msgid ""
+msgstr ""
+"Project-Id-Version: MnCombine 1.1.5\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/mncombine\n"
+"POT-Creation-Date: 2013-11-12 23:56:16+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2013-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: class-plugin-mncombine.php:323
+msgid "Mn Combine"
+msgstr ""
+
+#: class-plugin-mncombine.php:324
+msgid "Asset Combine"
+msgstr ""
+
+#: class-plugin-mncombine.php:346
+msgid "Description"
+msgstr ""
+
+#: class-plugin-mncombine.php:347
+msgid ""
+"Finds all possible .js and .css files from a WP install available and allows "
+"\r\n"
+"        you to combine and/or compress the files to reduce load time. The "
+"plugin can monitor file changes in \r\n"
+"        \"development\" mode (by hashing file mtime) which allows the plugin "
+"to recompile the files when a \r\n"
+"        file changes. Or, it can cache the files in \"production\" mode so "
+"that files are only recompiled \r\n"
+"        if they are not found or are deleted manually from the cache folder. "
+"Additionally, this plugin will \r\n"
+"        allow you to force the inclusion of javascript files into either the "
+"head or the foot of the page."
+msgstr ""
+
+#: class-plugin-mncombine.php:353
+msgid ""
+"There are two modes, development and production, the ability to force the "
+"files to print in the header or footer*, \r\n"
+"        the use of Google Closure as a JS compiler, and finally the ability "
+"to pick and choose which files, \r\n"
+"        including dependencies, should be combined."
+msgstr ""
+
+#: class-plugin-mncombine.php:356
+msgid ""
+"*forcing head compiles can fail on JS files queued after the call to wp_head"
+"(). The plugin will, \r\n"
+"        in this case, render the late queued files in the footer as "
+"originally intended."
+msgstr ""
+
+#: class-plugin-mncombine.php:361
+msgid "General Settings"
+msgstr ""
+
+#: class-plugin-mncombine.php:362
+msgid "Javascript Compression Engine "
+msgstr ""
+
+#: class-plugin-mncombine.php:362
+msgid ""
+": determine\r\n"
+"        the compression engine to use when compressing javascript files"
+msgstr ""
+
+#: class-plugin-mncombine.php:364
+msgid "Compress CSS "
+msgstr ""
+
+#: class-plugin-mncombine.php:365
+msgid ""
+" :  determines whether or not to compress the compiled css. This is done "
+"using a regex which, in \r\n"
+"         most cases, does a great job compressing css by removing "
+"whitespaces and newlines. This can, however, cause\r\n"
+"         errors in some css. If it does, please contact us and let us know "
+"what css caused the error."
+msgstr ""
+
+#: class-plugin-mncombine.php:368
+msgid "Mode "
+msgstr ""
+
+#: class-plugin-mncombine.php:369
+msgid ""
+" : Prodution mode will only\r\n"
+"        compile the files neccessary for a page on the first request and "
+"cache those files.\r\n"
+"        All subsequent requests will serve those cache files until either a "
+"new dependency\r\n"
+"        is queued or the cache file is removed. Development mode will "
+"monitor the files\r\n"
+"        last change time and recompile the assets on any page request where "
+"the files data\r\n"
+"        has been modified."
+msgstr ""
+
+#: class-plugin-mncombine.php:374
+msgid " NOTE: "
+msgstr ""
+
+#: class-plugin-mncombine.php:374
+msgid ""
+" development mode will not monitor changes\r\n"
+"        made to css files that are included by an @import statement "
+msgstr ""
+
+#: class-plugin-mncombine.php:376
+msgid "Force combine "
+msgstr ""
+
+#: class-plugin-mncombine.php:377
+msgid ""
+" : footer will force all javascript to load in the footer while header\r\n"
+"        will force all queued javascript to be loaded in the footer. Forcing "
+"files queued for the header into the footer\r\n"
+"        can cause some scripts to fail or dependencies to be missed if "
+"javascript is written inline in. \r\n"
+"        Forcing scripts into the header can cause scripts queued late to "
+"still remain in the footer.\r\n"
+"        Use this to get the best load times possible but beware that it can "
+"break your site when enabled and probably isn't necessary."
+msgstr ""
+
+#: class-plugin-mncombine.php:400
+msgid "Members per page"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "MnCombine"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "http://mneilsworld.com/php-2/mncombine-wp-plugin-release"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid ""
+"Easily manage the merging and compression of js and css files from plugins "
+"and themes"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Michael Neil"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://mneilsworld.com/"
+msgstr ""

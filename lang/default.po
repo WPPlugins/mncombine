@@ -1,0 +1,257 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: MnCombine\n"
+"POT-Creation-Date: 2013-11-18 08:52-0800\n"
+"PO-Revision-Date: 2013-11-18 09:20-0800\n"
+"Last-Translator: Michael Neil <mneil@mneilsworld.com>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;gettext;gettext_noop;__;_e\n"
+"X-Poedit-Basepath: .\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../class-plugin-mncombine.php:323
+msgid "Mn Combine"
+msgstr ""
+
+#: ../class-plugin-mncombine.php:324
+msgid "Asset Combine"
+msgstr ""
+
+#: ../class-plugin-mncombine.php:346
+msgid "Description"
+msgstr ""
+
+#: ../class-plugin-mncombine.php:347
+msgid ""
+"Finds all possible .js and .css files from a WP install available and "
+"allows \n"
+"        you to combine and/or compress the files to reduce load time. The "
+"plugin can monitor file changes in \n"
+"        \"development\" mode (by hashing file mtime) which allows the plugin "
+"to recompile the files when a \n"
+"        file changes. Or, it can cache the files in \"production\" mode so "
+"that files are only recompiled \n"
+"        if they are not found or are deleted manually from the cache folder. "
+"Additionally, this plugin will \n"
+"        allow you to force the inclusion of javascript files into either the "
+"head or the foot of the page."
+msgstr ""
+
+#: ../class-plugin-mncombine.php:353
+msgid ""
+"There are two modes, development and production, the ability to force the "
+"files to print in the header or footer*, \n"
+"        the use of Google Closure as a JS compiler, and finally the ability "
+"to pick and choose which files, \n"
+"        including dependencies, should be combined."
+msgstr ""
+
+#: ../class-plugin-mncombine.php:356
+msgid ""
+"*forcing head compiles can fail on JS files queued after the call to wp_head"
+"(). The plugin will, \n"
+"        in this case, render the late queued files in the footer as "
+"originally intended."
+msgstr ""
+
+#: ../class-plugin-mncombine.php:361 ../views/admin.php:19
+msgid "General Settings"
+msgstr ""
+
+#: ../class-plugin-mncombine.php:362
+msgid "Javascript Compression Engine "
+msgstr ""
+
+#: ../class-plugin-mncombine.php:362
+msgid ""
+": determine\n"
+"        the compression engine to use when compressing javascript files"
+msgstr ""
+
+#: ../class-plugin-mncombine.php:364
+msgid "Compress CSS "
+msgstr ""
+
+#: ../class-plugin-mncombine.php:365
+msgid ""
+" :  determines whether or not to compress the compiled css. This is done "
+"using a regex which, in \n"
+"         most cases, does a great job compressing css by removing "
+"whitespaces and newlines. This can, however, cause\n"
+"         errors in some css. If it does, please contact us and let us know "
+"what css caused the error."
+msgstr ""
+
+#: ../class-plugin-mncombine.php:368
+msgid "Mode "
+msgstr ""
+
+#: ../class-plugin-mncombine.php:369
+msgid ""
+" : Prodution mode will only\n"
+"        compile the files neccessary for a page on the first request and "
+"cache those files.\n"
+"        All subsequent requests will serve those cache files until either a "
+"new dependency\n"
+"        is queued or the cache file is removed. Development mode will "
+"monitor the files\n"
+"        last change time and recompile the assets on any page request where "
+"the files data\n"
+"        has been modified."
+msgstr ""
+
+#: ../class-plugin-mncombine.php:374
+msgid " NOTE: "
+msgstr ""
+
+#: ../class-plugin-mncombine.php:374
+msgid ""
+" development mode will not monitor changes\n"
+"        made to css files that are included by an @import statement "
+msgstr ""
+
+#: ../class-plugin-mncombine.php:376
+msgid "Force combine "
+msgstr ""
+
+#: ../class-plugin-mncombine.php:377
+msgid ""
+" : footer will force all javascript to load in the footer while header\n"
+"        will force all queued javascript to be loaded in the footer. Forcing "
+"files queued for the header into the footer\n"
+"        can cause some scripts to fail or dependencies to be missed if "
+"javascript is written inline in. \n"
+"        Forcing scripts into the header can cause scripts queued late to "
+"still remain in the footer.\n"
+"        Use this to get the best load times possible but beware that it can "
+"break your site when enabled and probably isn't necessary."
+msgstr ""
+
+#: ../class-plugin-mncombine.php:400
+msgid "Members per page"
+msgstr ""
+
+#: ../views/admin.php:20
+msgid "Cache"
+msgstr ""
+
+#: ../views/admin.php:21
+msgid "Javascript"
+msgstr ""
+
+#: ../views/admin.php:22
+msgid "CSS"
+msgstr ""
+
+#: ../views/admin.php:61
+msgid "Javascript Compression Engine"
+msgstr ""
+
+#: ../views/admin.php:65
+msgid "choose which javascript engine to use when compressing"
+msgstr ""
+
+#: ../views/admin.php:69
+msgid "No Compression"
+msgstr ""
+
+#: ../views/admin.php:74
+msgid "Google Closure"
+msgstr ""
+
+#: ../views/admin.php:74 ../views/admin.php:79 ../views/admin.php:165
+#: ../views/admin.php:170
+msgid "learn more"
+msgstr ""
+
+#: ../views/admin.php:79
+msgid "JSMin"
+msgstr ""
+
+#: ../views/admin.php:79
+msgid "Not recommended but it still works"
+msgstr ""
+
+#: ../views/admin.php:110
+msgid "Compress CSS"
+msgstr ""
+
+#: ../views/admin.php:114
+msgid "choose whether or not to compress the css"
+msgstr ""
+
+#: ../views/admin.php:118
+msgid "No"
+msgstr ""
+
+#: ../views/admin.php:123
+msgid "Yes"
+msgstr ""
+
+#: ../views/admin.php:131
+msgid "Mode"
+msgstr ""
+
+#: ../views/admin.php:135
+msgid "Choose a mode to determine when to compress"
+msgstr ""
+
+#: ../views/admin.php:139
+msgid "Development"
+msgstr ""
+
+#: ../views/admin.php:144
+msgid "Production"
+msgstr ""
+
+#: ../views/admin.php:152
+msgid "Force Combine"
+msgstr ""
+
+#: ../views/admin.php:156
+msgid "Force scripts queued to load in the header or footer only"
+msgstr ""
+
+#: ../views/admin.php:160
+msgid "Do not force"
+msgstr ""
+
+#: ../views/admin.php:165
+msgid "In the header"
+msgstr ""
+
+#: ../views/admin.php:170
+msgid "In the footer"
+msgstr ""
+
+#: ../views/admin.php:178
+msgid "Don't combine css on regex"
+msgstr ""
+
+#: ../views/admin.php:182
+msgid "Don't combine css files on specific pages"
+msgstr ""
+
+#: ../views/admin.php:184 ../views/admin.php:199
+msgid "/\\/$|\\/about$/ : exclude home and about"
+msgstr ""
+
+#: ../views/admin.php:187 ../views/admin.php:202
+msgid "A regex matching REQUEST_URI."
+msgstr ""
+
+#: ../views/admin.php:193
+msgid "Don't combine js on regex"
+msgstr ""
+
+#: ../views/admin.php:197
+msgid "Don't combine js files on specific pages"
+msgstr ""
+
+#: ../views/admin.php:212
+msgid "Save Changes"
+msgstr ""
